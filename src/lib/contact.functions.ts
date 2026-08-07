@@ -14,24 +14,8 @@ export type ContactInput = z.infer<typeof contactSchema>;
 export const sendContactEmail = createServerFn({ method: "POST" })
   .inputValidator((data: ContactInput) => contactSchema.parse(data))
   .handler(async ({ data }) => {
-    const nodemailer = await import("nodemailer");
-
-    const host = process.env.SMTP_HOST;
-    const port = Number(process.env.SMTP_PORT ?? 465);
-    const user = process.env.SMTP_USER;
-    const pass = process.env.SMTP_PASS;
-    const to = process.env.SMTP_TO ?? user;
-
-    if (!host || !user || !pass) {
-      throw new Error("SMTP is not configured.");
-    }
-
-    const transporter = nodemailer.createTransport({
-      host,
-      port,
-      secure: port === 465,
-      auth: { user, pass },
-    });
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) throw new Error("RESEND_API_KEY is not configured.");
 
     const html = `
       <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px;border:1px solid #e5e7eb;border-radius:12px;">
@@ -50,13 +34,25 @@ export const sendContactEmail = createServerFn({ method: "POST" })
       </div>
     `;
 
-    await transporter.sendMail({
-      from: `"DP Engineering Website" <${user}>`,
-      to,
-      replyTo: data.email,
-      subject: `New Inquiry from ${data.name}${data.company ? ` (${data.company})` : ""}`,
-      html,
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: "DP Engineering <onboarding@resend.dev>",
+        to: ["support@dpengineering.in"],
+        reply_to: data.email,
+        subject: `New Inquiry from ${data.name}${data.company ? ` (${data.company})` : ""}`,
+        html,
+      }),
     });
+
+    if (!res.ok) {
+      const err = await res.text();
+      throw new Error(`Failed to send email: ${err}`);
+    }
 
     return { success: true };
   });

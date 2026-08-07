@@ -18,7 +18,7 @@ export const CONTACT = {
   phoneSecondary: "+91 70449 35963",
   phoneSecondaryHref: "tel:+917044935963",
   waNumber: "918981044341",
-  emailSales: "info@dpengineering.in",
+  emailSales: "support@dpengineering.in",
   emailBiswajit: "biswajit@dpengineering.in",
   emailSpares: "spares.dpe@gmail.com",
   address: "36 Yeni Sarani, PO – Joka, Near Vidyasagar Park, Kolkata – 700104, WB",
