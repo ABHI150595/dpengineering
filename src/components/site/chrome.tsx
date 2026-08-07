@@ -10,7 +10,7 @@ import {
   Phone,
   X,
 } from "lucide-react";
-import logoAsset from "@/assets/DPE-logo.png.asset.json";
+import logoAsset from "@/assets/DPE-logo.png";
 
 export const CONTACT = {
   phonePrimary: "+91 89810 44341",
@@ -74,7 +74,7 @@ function Nav() {
       <div className="container-x flex h-16 md:h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt="DP Engineering logo"
             className="h-10 md:h-12 w-auto transition-transform group-hover:rotate-[8deg]"
           />
@@ -170,7 +170,7 @@ function Footer() {
       <div className="container-x py-16 md:py-20 grid lg:grid-cols-6 gap-10">
         <div className="lg:col-span-3">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="DP Engineering logo" className="h-12 w-auto" />
+            <img src={logoAsset} alt="DP Engineering logo" className="h-12 w-auto" />
             <span className="font-display font-bold text-white">DP Engineering</span>
           </Link>
           <p className="mt-4 text-sm text-white/60 max-w-md">
