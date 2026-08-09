@@ -191,7 +191,7 @@ export function Hero() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 backdrop-blur px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white/80">
             <span className="h-1.5 w-1.5 rounded-full bg-brand animate-pulse" />
-            Est. 2009 · Authorised industrial partner
+            Est. 2020 · Authorised industrial partner
           </div>
           <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.02]">
             Engineering Precision.
