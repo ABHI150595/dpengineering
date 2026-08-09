@@ -8,7 +8,7 @@ export const Route = createFileRoute("/brands")({
   head: () => ({
     meta: [
       { title: "Brands We Deal In — DP Engineering" },
-      { name: "description", content: "Authorised supplier of Bosch Rexroth, Parker Hannifin, Yuken, Danfoss, Eaton, Vickers, Kawasaki, Nachi and more." },
+      { name: "description", content: "Authorised supplier of Bosch Rexroth, Parker Hannifin, Yuken, Danfoss, Eaton, M+S Hydraulics, Dowty, THM Hydraulics, Bucher Hydraulics and more." },
       { property: "og:title", content: "Brands — DP Engineering" },
       { property: "og:description", content: "Genuine parts from the world's most trusted hydraulic and industrial manufacturers." },
       { property: "og:type", content: "website" },
@@ -26,10 +26,10 @@ const BRANDS = [
   { name: "Veljan", tag: "Vane pumps & valves" },
   { name: "Polyhydron", tag: "High-pressure piston pumps" },
   { name: "Eaton", tag: "Industrial hydraulics" },
-  { name: "Vickers", tag: "Pumps, motors & valves" },
-  { name: "Kawasaki", tag: "Axial piston solutions" },
-  { name: "Nachi", tag: "Hydraulic components" },
-  { name: "Rexroth Indramat", tag: "Motion drives" },
+  { name: "M+S Hydraulics", tag: "Orbital hydraulic motors" },
+  { name: "Dowty", tag: "Gear pumps & hydraulic components" },
+  { name: "THM Hydraulics", tag: "Hydraulic motors & pumps" },
+  { name: "Bucher Hydraulics", tag: "Hydraulic systems & components" },
   { name: "Sun Hydraulics", tag: "Cartridge valves" },
 ];
 

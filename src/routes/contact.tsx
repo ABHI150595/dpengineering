@@ -105,9 +105,6 @@ function ContactPage() {
                 <a href={CONTACT.phonePrimaryHref} className="flex items-center gap-3 text-navy hover:text-brand transition">
                   <Phone className="h-4 w-4 text-brand" /> {CONTACT.phonePrimary}
                 </a>
-                <a href={CONTACT.phoneSecondaryHref} className="flex items-center gap-3 text-navy hover:text-brand transition">
-                  <Phone className="h-4 w-4 text-brand" /> {CONTACT.phoneSecondary}
-                </a>
                 <a href={`https://wa.me/${CONTACT.waNumber}`} target="_blank" rel="noopener" className="flex items-center gap-3 text-navy hover:text-brand transition">
                   <MessageSquare className="h-4 w-4 text-brand" /> WhatsApp us
                 </a>

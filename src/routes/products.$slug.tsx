@@ -139,13 +139,13 @@ function ProductDetail() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="tel:+918981044341"
+                href="tel:+917044935963"
                 className="inline-flex items-center rounded-md bg-[#F58220] px-5 py-3 text-sm font-semibold text-white shadow hover:bg-[#e0741a]"
               >
                 Request Quote
               </a>
               <a
-                href={`https://wa.me/918981044341?text=${encodeURIComponent(
+                href={`https://wa.me/917044935963?text=${encodeURIComponent(
                   `Hi, I'd like a quote for ${product.name}${product.sku ? ` (SKU: ${product.sku})` : ""}.`,
                 )}`}
                 target="_blank"

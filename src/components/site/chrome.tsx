@@ -13,11 +13,9 @@ import {
 import logoAsset from "@/assets/DPE-logo.png";
 
 export const CONTACT = {
-  phonePrimary: "+91 89810 44341",
-  phonePrimaryHref: "tel:+918981044341",
-  phoneSecondary: "+91 70449 35963",
-  phoneSecondaryHref: "tel:+917044935963",
-  waNumber: "918981044341",
+  phonePrimary: "+91 70449 35963",
+  phonePrimaryHref: "tel:+917044935963",
+  waNumber: "917044935963",
   emailSales: "support@dpengineering.in",
   emailBiswajit: "biswajit@dpengineering.in",
   emailSpares: "spares.dpe@gmail.com",
@@ -179,7 +177,7 @@ function Footer() {
           </p>
           <div className="mt-6 space-y-2 text-sm">
             <div className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <span>{CONTACT.address}</span></div>
-            <div className="flex items-center gap-2 flex-wrap"><Phone className="h-4 w-4 text-brand shrink-0" /> <a href={CONTACT.phonePrimaryHref} className="hover:text-white">{CONTACT.phonePrimary}</a> <span className="text-white/40">/</span> <a href={CONTACT.phoneSecondaryHref} className="hover:text-white">{CONTACT.phoneSecondary}</a></div>
+            <div className="flex items-center gap-2 flex-wrap"><Phone className="h-4 w-4 text-brand shrink-0" /> <a href={CONTACT.phonePrimaryHref} className="hover:text-white">{CONTACT.phonePrimary}</a></div>
             <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand shrink-0" /> <a href={`mailto:${CONTACT.emailSales}`} className="hover:text-white">{CONTACT.emailSales}</a></div>
             <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand shrink-0" /> <a href={`mailto:${CONTACT.emailBiswajit}`} className="hover:text-white">{CONTACT.emailBiswajit}</a></div>
           </div>

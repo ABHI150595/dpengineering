@@ -215,9 +215,9 @@ export function Hero() {
 
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.7 }} className="relative mt-14 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-4xl">
           {[
-            { k: "15+", v: "Years serving industry" },
+            { k: "10+", v: "Years serving industry" },
             { k: "10k+", v: "Product SKUs" },
-            { k: "800+", v: "Active OEM clients" },
+            { k: "100+", v: "OEM & plant clients" },
             { k: "28", v: "States delivered to" },
           ].map((s, i) => (
             <motion.div
@@ -283,8 +283,8 @@ export function Intro() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.15 }} className="lg:col-span-7 grid grid-cols-2 gap-4 md:gap-6">
-          <div className="rounded-3xl bg-surface-muted p-8"><Stat to={15} suffix="+" label="Years in industry" /></div>
-          <div className="rounded-3xl bg-navy p-8 text-white"><div className="font-display text-4xl md:text-5xl font-semibold">800+</div><div className="mt-2 text-sm text-white/70">OEM & plant clients</div></div>
+          <div className="rounded-3xl bg-surface-muted p-8"><Stat to={10} suffix="+" label="Years in industry" /></div>
+          <div className="rounded-3xl bg-navy p-8 text-white"><div className="font-display text-4xl md:text-5xl font-semibold">100+</div><div className="mt-2 text-sm text-white/70">OEM & plant clients</div></div>
           <div className="rounded-3xl bg-brand p-8 text-white"><div className="font-display text-4xl md:text-5xl font-semibold">10k+</div><div className="mt-2 text-sm text-white/85">Catalog SKUs</div></div>
           <div className="rounded-3xl bg-surface-muted p-8"><Stat to={28} label="States delivered to" /></div>
         </motion.div>
