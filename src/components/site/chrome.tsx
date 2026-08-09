@@ -177,7 +177,7 @@ function Footer() {
           </p>
           <div className="mt-6 space-y-2 text-sm">
             <div className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <span>{CONTACT.address}</span></div>
-            <div className="flex items-center gap-2 flex-wrap"><Phone className="h-4 w-4 text-brand shrink-0" /> <a href={CONTACT.phonePrimaryHref} className="hover:text-white">{CONTACT.phonePrimary}</a></div>
+            <div className="flex items-center gap-2 flex-wrap"><Phone className="h-4 w-4 text-brand shrink-0" /> <a href="tel:+918981044341" className="hover:text-white">+91 89810 44341</a> <span className="text-white/40">/</span> <a href="tel:+917044935963" className="hover:text-white">+91 70449 35963</a></div>
             <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand shrink-0" /> <a href={`mailto:${CONTACT.emailSales}`} className="hover:text-white">{CONTACT.emailSales}</a></div>
             <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand shrink-0" /> <a href={`mailto:${CONTACT.emailBiswajit}`} className="hover:text-white">{CONTACT.emailBiswajit}</a></div>
           </div>

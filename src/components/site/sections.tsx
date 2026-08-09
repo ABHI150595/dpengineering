@@ -64,7 +64,8 @@ export const industries = [
 
 export const brandList = [
   "Bosch Rexroth", "Parker Hannifin", "Yuken", "Danfoss", "Veljan",
-  "Polyhydron", "Eaton", "Vickers", "Kawasaki", "Nachi",
+  "Polyhydron", "Eaton", "M+S Hydraulics", "Dowty", "THM Hydraulics",
+  "Bucher Hydraulics", "Sun Hydraulics",
 ];
 
 export const whyUs = [
@@ -72,7 +73,7 @@ export const whyUs = [
   { Icon: Truck, title: "Pan-India Fast Delivery", body: "Same-day dispatch on stocked SKUs, express freight across every state." },
   { Icon: HeadphonesIcon, title: "Engineering Support", body: "Talk to real hydraulic engineers — not a call centre — for sizing & selection." },
   { Icon: Gauge, title: "Competitive Pricing", body: "Direct import & bulk contracts translate to sharper landed cost for OEMs." },
-  { Icon: Sparkles, title: "Experienced Team", body: "15+ years serving India's toughest industrial sites and OEM assembly lines." },
+  { Icon: Sparkles, title: "Experienced Team", body: "10+ years serving India's toughest industrial sites and OEM assembly lines." },
   { Icon: FileText, title: "Quality Assured", body: "ISO-aligned inspection, test certificates and datasheets on every order." },
 ];
 
